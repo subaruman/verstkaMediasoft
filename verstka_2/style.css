@@ -6,12 +6,26 @@
     border-color:  #6c3d96 ;
     border-style: outset ;
     overflow: hidden;
+    border-image: linear-gradient(17deg, rgba(140,190,184,0.9345939059217437) 0%, rgba(123,143,195,1) 36%, rgba(132,148,201,1) 62%, rgba(183,141,189,0.9261905445772058) 100%);
+    border-image-slice: 1;
 
 }
 
 div{
+    margin: auto;
+    background: #eee;
 
+    border: 5px solid transparent;
+
+    -moz-border-image: -moz-linear-gradient(top left, rgba(140,190,184,0.9345939059217437) 0%, rgba(123,143,195,1) 36%, rgba(132,148,201,1) 62%, rgba(183,141,189,0.9261905445772058) 100%);
+    -webkit-border-image: -webkit-linear-gradient(top left, rgba(140,190,184,0.9345939059217437) 0%, rgba(123,143,195,1) 36%, rgba(132,148,201,1) 62%, rgba(183,141,189,0.9261905445772058) 100%);
+    border-image: linear-gradient(to bottom right, rgba(140,190,184,0.9345939059217437) 0%, rgba(123,143,195,1) 36%, rgba(132,148,201,1) 62%, rgba(183,141,189,0.9261905445772058) 100%);
+
+    border-image-slice: 1;
 }
+
+
+
 
 th{
     border: 0px;
