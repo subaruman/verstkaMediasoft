@@ -6,11 +6,10 @@ $str = "Lorem Ipsum - это текст - часто используемый в
 образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной 
 вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.";
 
-//echo $str . PHP_EOL . PHP_EOL ;
 $cntWord = str_word_count($str, 0, 'АаБбВвГгДдЕеЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЪъЫыЬьЭэЮюЯя');
 
 $arr = str_word_count($str, 1, 'АаБбВвГгДдЕеЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЪъЫыЬьЭэЮюЯя');
-for ($i=0; $i <= 92; $i++)
+for ($i=0; $i < $cntWord; $i++)
 {
     $cntVhod = substr_count($str, $arr[$i]);
     $totalArr[$arr[$i]] = $cntVhod;
