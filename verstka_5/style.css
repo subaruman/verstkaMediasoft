@@ -91,7 +91,7 @@
                         "gbox3 gbox3 gbox5"
                         "gbox6 gbox7 hidegbox2";
     grid-template-rows: repeat(5, 50px);
-    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(2, 260px);
 }
 .gbox1 {
     grid-area: gbox1;
