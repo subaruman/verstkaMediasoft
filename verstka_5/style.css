@@ -78,3 +78,71 @@
     width: 100px;
     border: hidden;
 }
+
+
+
+
+.grid1 {
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "gbox1 gbox1 gbox2"
+                        "gbox1 gbox1 gbox2"
+                        "gbox3 gbox3 gbox4"
+                        "gbox3 gbox3 gbox5"
+                        "gbox6 gbox7 hidegbox2";
+    grid-template-rows: repeat(5, 50px);
+    grid-template-columns: repeat(3, 250px);
+}
+.gbox1 {
+    grid-area: gbox1;
+    /*width: 500px;*/
+    /*height: 100px;*/
+
+}
+.gbox2 {
+    grid-area: gbox2;
+    width: 100px;
+    /*height: 100px;*/
+    /*margin-top: 20px;*/
+}
+.gbox3 {
+    grid-area: gbox3;
+    /*height: 100px;*/
+
+}
+.gbox4 {
+    grid-area: gbox4;
+    grid-row: span;
+    height: 20px;
+    width: 100px;
+
+}
+.gbox5 {
+    grid-area: gbox5;
+    height: 20px;
+    width: 100px;
+    align-self: flex-end;
+}
+.gbox6 {
+    grid-area: gbox6;
+    height: 20px;
+}
+.gbox7 {
+    grid-area: gbox7;
+    height: 20px;
+ }
+.hidegbox{
+    /*border: #31b52a 1px solid;*/
+    grid-area: hidegbox;
+}
+.hidebox2{
+    /*border: #31b52a 1px solid;*/
+    grid-area: hidegbox2;
+}
+
+.gbox1 , .gbox2 , .gbox3 , .gbox4 , .gbox5 , .gbox6 , .gbox7{
+    border: #31b52a 1px solid;
+    margin: 10px;
+    text-align: center;
+}
+
