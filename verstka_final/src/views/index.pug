@@ -1,0 +1,69 @@
+//extends ./layouts/master.pug
+
+block title
+  title My Page - Home
+link(href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet")
+body
+    block mainScreen
+    div.mainScreen
+        div.header
+            div.header-name YokNgalam
+            button.header-but-home Home
+            button.header-but-dest Destination
+            button.header-but-ittin Ittinary
+            button.header-but-review Review
+            button.header-but-contact Contact
+            button.header-but-profile Profile
+        br
+        p.mainScreen-headline LETS GET
+            span.mainScreen-headline2  LOST
+        p.mainScreen-subHeadline Malang will never dissapointed you.
+        p.mainScreen-subHeadline From every step you took you will be amazed and suddenly, i want work in mediasoft.
+        button.mainScreen-but-set SET ITTINERY NOW
+
+    block hamburger
+    div.hamburger-menu
+        input#menu__toggle(type="checkbox")
+        label.menu__btn(for="menu__toggle")
+            span
+
+        ul.menu__box
+            li
+                a.menu__logo YokNgalam
+            li
+                a.menu__item Home
+            li
+                a.menu__item Destination
+            li
+                a.menu__item Ittinary
+            li
+                a.menu__item Review
+            li
+                a.menu__item Contact
+            li
+                a.menu__item Profile
+
+    block destination
+        div.destination
+            br
+            p.dest__headline Des
+                span.dest__headline2 tination
+            p.dest__subheadline Being around by many mountain, Malang not only
+                |came with mountain vacation, but our beach,
+            p.dest__subheadline cultural spot, and Human Interest is worth to experienced.
+
+            div.dest__contain
+                span.dest__contain_icon
+                    |
+                    i.fa.fa-search
+                input.dest__contain_search(type="search" placeholder="search destination")
+            div.dest__contain_switch ALL PLACE / RECOMENDED PLACE
+
+
+
+            div.dest__contain_batu
+                br
+                div.batu_img
+                div.batu_textblock
+                    p.batu_textblock_text is a city located in East Java Province of Indonesia.
+

@@ -1,0 +1,381 @@
+/* src/assets/styles/layout/_general.scss  */
+body{
+  margin: 0;
+  padding: 0;
+}
+$color-header: #00a9ac;
+
+.header{
+  display: grid;
+  grid-template-areas: "post-1 post-2 post-3 post-4 post-5 post-6 post-7";
+  grid-template-rows: 50px;
+  //grid-template-columns: 500px repeat(6, 130px);
+
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 30px;
+  color: #ffffff;
+  margin-right: 5%;
+  position: fixed;
+  //margin-top: 300px;
+  margin-left: 15%;
+  z-index: 1000;
+
+}
+
+.header-name{
+  grid-area: post-1;
+  text-align: center;
+  align-self: center;
+  margin-right: 300px;
+  margin-left: -50px;
+  margin-top: 50px;
+  font-family: Montserrat-Bold;
+  font-size: 25px;
+  min-width: 100px;
+
+}
+
+.header-but-home{
+  grid-area: post-2;
+}
+
+.header-but-dest{
+  grid-area: post-3;
+}
+
+.header-but-ittin{
+  grid-area: post-4;
+}
+
+.header-but-review{
+  grid-area: post-5;
+}
+
+.header-but-contact{
+  grid-area: post-6;
+}
+
+.header-but-profile{
+  grid-area: post-7;
+}
+
+
+.header-but-home, .header-but-dest, .header-but-ittin,
+.header-but-review, .header-but-contact, .header-but-profile{
+  align-self: center;
+  justify-self: center;
+  //margin-left: 400px;
+  margin-top: 50px;
+  height: 50px;
+  width: 100px;
+  font-family: Montserrat-Bold;
+
+  border: none;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0);
+}
+
+.header-but-home:hover, .header-but-dest:hover, .header-but-ittin:hover,
+.header-but-review:hover, .header-but-contact:hover, .header-but-profile:hover {
+  border-radius: 100px ;
+  border: 3px solid #ffffff;
+  transition-duration: 0.5s;
+}
+.mainScreen{
+  //background: rgb(94,154,150);
+  //background: linear-gradient(180deg, rgba(94,154,150,1) 0%, rgba(155,221,216,1) 12%, rgba(155,221,216,1) 100%);
+  background: #9bddd8 url(@~images/mountain2.png) no-repeat;
+
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+
+  height: 825px;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 0px;
+
+}
+
+.mainScreen-headline{
+  margin: 300px 0px 0px 0;
+  font-size: 100px;
+  font-family: ChunkFive;
+  color: #ffffff;
+
+}
+
+.mainScreen-headline2{
+  color: #00a9ac;
+}
+
+.mainScreen-subHeadline{
+  font-family: Lato-Regular;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.mainScreen-but-set{
+  border-radius: 100px;
+  border: 3px solid #FFD76A;
+  background: rgba(255, 252, 108, 0.83);
+  font-family: Montserrat-Bold;
+  font-size: 18px;
+  width: 250px;
+  height: 70px;
+  margin-top: 50px;
+}
+
+
+@media screen and (min-width: 1081px) {
+  .hamburger-menu{
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 1080px) {
+    .mainScreen-headline{
+      margin-top: 200px;
+  }
+  .header{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+
+  .mainScreen-headline{
+    font-size: 70px;
+    margin-top: 160px;
+    margin-bottom: 30px;
+  }
+  .mainScreen-but-set{
+    margin-top: 50px;
+  }
+  .header{
+    display: none;
+  }
+}
+
+
+
+//-----------------------DESTINATION Block Start-------------------------------
+
+.destination{
+  background: #f2fefe;
+  height: 500px;
+}
+
+.dest__headline{
+  margin-left: 20%;
+  margin-top: 30px;
+  color: #00e0e3;
+  font-size: 70px;
+  font-family: ChunkFive;
+}
+
+.dest__headline2{
+  color: #00a9ac;
+}
+
+.dest__subheadline{
+  font-family: Lato-Regular;
+  font-size: 18px;
+  color: #333333;
+  margin-left: 20%;
+  margin-top: 30px;
+}
+
+
+.dest__contain{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  margin-left: 5%;
+  margin-top: 100px;
+}
+$margin_search: 170px;
+.dest__contain input.dest__contain_search{
+  width: 300px;
+  height: 50px;
+  border: 1px #333333 solid;
+  font-size: 10pt;
+  float: left;
+  padding-left: 45px;
+  margin-left: $margin_search;
+  border-radius: 105px;
+
+}
+.dest__contain .dest__contain_icon{
+  position: absolute;
+  top: 50%;
+  margin-left: $margin_search+10px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #4f5b66;
+}
+
+.dest__contain_switch{
+  //display: inline-block;
+  text-align: right;
+  margin-right: 15%;
+}
+
+.dest__contain_batu{
+  display: grid;
+  justify-content: center;
+  grid-template-areas: "post-1 post-2";
+  grid-template-columns: 717px 330px;
+  margin-top: 69px;
+}
+
+.batu_img{
+  background: #f2fefe url(@~images/parachute.png) no-repeat;
+  //background-size: cover;
+  //background-position: center ;
+  height: 517px;
+
+  //position: relative;
+  //z-index: 2;
+  grid-area: post-1;
+}
+
+.batu_textblock {
+  background: rgba(249, 241, 255, 0.7);
+  //background-position: center ;
+  height: 517px;
+  width: 500px;
+  //margin-top: -533px;
+  //margin-left: 75%;
+  //position: absolute;
+  z-index: 3;
+  grid-area: post-2;
+}
+
+
+
+//----------------------Destination Block END-------------------------------------------
+
+
+//--------------------------гамбургер меню - начало--------------------------------------
+.hamburger-menu{
+  margin: 0;
+  height: 0;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+  background-color: #333;
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+  background-color: #333;
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+
+.menu__logo{
+  margin-left: 2%;
+  font-family: Montserrat-Bold;
+  font-size: 30px;
+  color: #00a9ac;
+}
+
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  width: 26px;
+  height: 26px;
+
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #ffffff;
+
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+  background-color: #ffffff;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+  background-color: #ffffff;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+
+  width: 300px;
+  height: 100%;
+
+  margin: 0;
+  padding: 80px 0;
+
+  list-style: none;
+
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+
+  transition-duration: .25s;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+
+  color: #333;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+//-----------------------------конец гамбургер меню--------------------------------------
+
+
+
